@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestingWorldAutomationTestsuite">
+	<listeners>
+		<listener class-name="com.testingworld.qa.extentreportlistener.ExtentReporterNG" />
+	</listeners>
+  <test name="TestingWorldAutomationTest">
+    <classes>
+      <class name="com.testingworld.qa.testcases.LoginTest"/>
+      <class name="com.testingworld.qa.testcases.CustomerTest"/>
+      <class name="com.testingworld.qa.testcases.HomeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

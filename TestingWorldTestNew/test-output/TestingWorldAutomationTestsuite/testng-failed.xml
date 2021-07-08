@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestingWorldAutomationTestsuite]">
+  <listeners>
+    <listener class-name="com.testingworld.qa.extentreportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test name="TestingWorldAutomationTest">
+    <classes>
+      <class name="com.testingworld.qa.testcases.LoginTest"/>
+      <class name="com.testingworld.qa.testcases.CustomerTest"/>
+      <class name="com.testingworld.qa.testcases.HomeTest"/>
+    </classes>
+  </test> <!-- TestingWorldAutomationTest -->
+  <test name="TestingWorldAutomationTest(failed)">
+    <classes>
+      <class name="com.testingworld.qa.testcases.CustomerTest">
+        <methods>
+          <include name="moveToActionsEditTest"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testingworld.qa.testcases.CustomerTest -->
+      <class name="com.testingworld.qa.testcases.HomeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.testingworld.qa.testcases.HomeTest -->
+      <class name="com.testingworld.qa.testcases.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testingworld.qa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- TestingWorldAutomationTest(failed) -->
+</suite> <!-- Failed suite [TestingWorldAutomationTestsuite] -->
